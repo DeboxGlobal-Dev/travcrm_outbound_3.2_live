@@ -1,0 +1,12 @@
+.form-check {
+    border: solid;
+    border-width: 1px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    width: 148px;
+    margin-top: 4px;
+    background-color: #dad2d2;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_gallery_nav_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_gallery_nav_left">
+            <g id="Group">
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="18" cy="18" r="17"></circle>
+                <circle id="Oval" fill-opacity="0.3" fill="#0E141E" cx="18" cy="18" r="16"></circle>
+                <polygon id="Shape" fill="#FFFFFF" points="21.2130301 23.7676122 15.6510532 17.9241834 21.2130301 12.0807545 19.5007184 10.2857143 12.2142857 17.9241834 19.5007184 25.5626525"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

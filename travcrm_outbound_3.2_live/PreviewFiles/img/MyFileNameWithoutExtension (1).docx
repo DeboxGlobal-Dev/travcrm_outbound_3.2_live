@@ -1,0 +1,670 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>
+
+<div class="main-container">
+   	<style type="text/css"> 
+		@media print{
+		    .main-container,body{
+		        background-color: #ffffff !important;
+		        margin-top: -30px!important;
+		    }
+		    div,ul,li,body,button{
+				margin: 0;
+			    padding: 0;
+			    border: 0;
+			    font: inherit;
+			    vertical-align: baseline;
+			    font-family: 'Roboto', sans-serif;
+			}
+			.firstpage .docTitle{
+				padding: 15px 30px 5px 30px;
+			}
+			.firstpage .docTitleArrow{
+			    position: absolute;
+			    right: -33px;
+			    top: 0px;
+			    height: 0;
+			    width: 0;
+			    border-left: 0px solid #233a4900;
+			    border-bottom: 53px solid #233a49;
+			    border-right: 40px solid #fff0;
+			    border-top: 0px solid #233a49;
+			}
+		}
+     	@page {
+            margin: 0;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+        body{
+			font-size: 14px;
+			color: #3c3a3a;
+			font-weight: 400;
+			background-color: #cadbec;
+			font-family: 'Source Sans Pro', sans-serif;
+        }
+	   	footer {
+            position: fixed; 
+            bottom: -80px; 
+            left: 0cm; 
+			/*background-color: #ff0000;*/
+            right: 0cm; 
+            height: 80px; 
+        }   
+        /*end teseting*/
+	    
+		.main-container{
+			width: 100%;
+			display: block; 
+			position: relative; 
+			/*border: 0px solid #ffffff;*/
+			background-color: #ffffff;
+		} 
+
+		.blank_line{
+			margin: 5px 0;
+			height: 0;
+			width: 0;
+		}
+		.hr_line{
+			margin: 40px 0px; 
+		} 
+		ul {
+			list-style: none;
+			color: #424244;
+			list-style-position: outside;
+			padding: 0;
+    		margin: 0;
+		}
+		ul li{
+		    margin-bottom: 10px;
+		}
+		
+	    .table-service{
+			page-break-inside: avoid;
+			page-break-after: auto;
+			page-break-before: auto;
+	    }
+	    .row-service{
+	    	page-break-inside: avoid;
+	    	page-break-after: auto;
+	    	page-break-before: auto;
+	    }
+	    .row-titleDesc{ 
+	    	page-break-inside: auto;
+	    	page-break-after: auto;
+	    	page-break-before: auto;
+	    }
+	    .dayTitle{
+	        line-height: 22px;
+		    font-size: 25px;
+		    padding: 5px;
+		    color: white;
+		    padding-bottom: 8px;
+		    margin-bottom: 10px;
+		    text-align: center;
+		    background-color: #233a49;
+	    }
+	    .serviceTitle{
+	      	font-size: 18px;
+		    line-height: 20px;
+		    color: #233a49;
+		    font-weight: 700;
+	    }
+	    .subHeading{
+	      	font-size: 15px;
+		    line-height: 20px;
+		    color: #233a49;
+		    font-weight: 700;
+	    }
+	    .serviceDesc{
+	    	text-align: justify;
+	    	page-break-inside: auto;
+	    	font-size: 14px;
+		    padding-bottom: 5px;
+		    line-height: 18px;
+	    }
+	    table{
+	    	border-collapse: collapse;
+	    }
+	    table.borderedTable{
+	    	width: 100%;
+	    }
+	    table.borderedTable th{
+	    	background-color: #233a49;
+	    	color: #ffffff;
+	    	text-align: left;
+	    }
+	    .calcostsheet{
+	    	display:none;
+	    	visibility: hidden;
+	    	height: 0;
+	    	width: 0;
+	    	position: fixed;
+	    	left: 0;
+	    	top: 0;
+	    }
+	    .docTitle{
+			background-color: #233a49;
+		    padding: 4px 29px;
+		    color: #fff;
+		    font-weight: bold;
+		    font-size: 20px;
+		    position: relative;
+		    display: inline-block;
+		    height: 33px;
+		    line-height: 30px;
+		}
+		.docTitleArrow{
+		    position: absolute;
+		    right: -33px;
+		    top: 0px;
+		    height: 0;
+		    width: 0;
+		    border-left: 0px solid #233a4900;
+		    border-bottom: 41px solid #233a49;
+		    border-right: 33px solid #fff0;
+		    border-top: 0px solid #233a49;
+		}
+		.proposalHeader{
+			/*margin-top: -50px;*/
+			padding: 20px 0px 15px 0px;
+	    	border-collapse: separate;
+			background-color: #ffffff;
+		}
+		.proposalHeader img{
+			margin-right: 30px;
+		}
+		/*docBanner*/
+		.docBanner{
+			position: relative;
+		}
+		.bannerText{
+		    position: absolute;
+		    top: 30px;
+		    left: 30px;
+		    right: 30px;
+		    text-align: left;
+		    display: block; 
+		}
+		.bannerText1 {
+		    position: absolute;
+		    bottom: 15px;
+		    left: 30px;
+		    right: 30px;
+		    text-align: center;
+		    display: block;
+		    background-color: #233a49cc;
+		    padding: 5px;
+		}
+		.bannerText strong, .bannerText1 strong{
+			font-weight: 600;
+		}
+		.colorSize1{
+		    color: #fff;
+		    font-size: 27px;
+		}
+		.colorSize2{
+		    font-size: 16px;
+		}
+		.colorSize3 strong{
+			font-size: 22px;
+			padding: 0px 5px;
+		}
+		.text1{
+		    font-weight: 500;
+		    display: block;
+		}
+		.text2{
+			font-weight: 600;
+			display: block;
+		}
+		.overviewBox{
+			padding: 30px;
+			padding-bottom: 10px;
+			display: block;
+			page-break-after: always;
+		}
+		.overviewBox .serviceTitle{
+			padding-bottom: 10px; 
+			display: block;
+			color: #424244;
+		}
+		.overviewBox .serviceDesc{
+			padding-bottom: 10px;
+		    font-size: 16px;
+			color: #424244;
+			font-weight: 400;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		.dayItineraryInfo{
+			padding: 30px;
+			padding-bottom: 10px;
+		    /*background-color: #ccc;*/
+		    display: block;
+		    position: relative;
+		    font-size: 16px;
+			color: #424244;
+			font-weight: 400;
+		    font-family: 'Source Sans Pro', sans-serif;
+		}
+		.itineraryTitle{
+			text-align: justify;
+		    page-break-inside: auto;
+		    padding-bottom: 20px;
+		}
+		.itineraryDesc{
+			text-align: justify;
+		    page-break-inside: auto;
+		    padding-bottom: 20px;
+		}
+	    .text-center{
+	    	text-align: center!important;
+	    }
+	    .valignBottom{
+
+	    }
+	    .pd30{
+	    	padding: 30px;
+	    }
+	    .w60{
+	    	width: 60%;
+	    }
+		.imgbox{
+			width: 200px;
+			height: 130px;
+			border-radius: 10px;
+			overflow: hidden;
+		    border: 1px solid #ffffff;
+		    box-shadow: 3px 3px 7px 0px rgb(185 185 185);
+		}
+		.imgbox img{ 
+			object-fit: cover;
+		}
+	</style>
+	<table class="firstpage proposalHeader" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td align="left" valign="middle">
+				<div class="docTitle">&nbsp;Proposal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="docTitleArrow"></span>
+				</div>
+			</td>
+			<td align="right" valign="middle">
+				<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/dirfiles/1659948631debox-logo.png" width="80px">
+			</td>
+		</tr>
+	</tbody></table>
+	<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td align="center" valign="top">
+				<div class="docBanner"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/sample-proposal.jpg" width="100%" height="300">
+					<div class="bannerText1 colorSize1">
+						<span class="text1">3 DAYS</span>
+						<span class="text2">14-05-2022 DeBox Global PVT. LTD.</span> 
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+	<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td align="center">
+				<div class="docBanner">
+					<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/banner-bottom-img.jpg" width="100%" height="210">
+					<div class="bannerText colorSize2">
+						<table width="100%" border="0" cellpadding="10" cellspacing="0">
+						<tbody><tr>
+						<td>DESTINATION COVERED<br><strong>Delhi, Agra, Jaipur</strong>
+						</td>
+						<td>DURATION<br>
+							<strong>2 Nights / 3 Days</strong>
+						</td>
+						<td align="right">TRAVELLERS<br>
+							<strong>7 Adults</strong>
+						</td>
+						</tr> 
+						</tbody></table>
+						<br>
+						<br>
+						<table width="100%" border="0" cellpadding="10" cellspacing="0" class="colorSize3">
+						<tbody><tr>
+							<td align="center" colspan="4" valign="middle"><strong>Delhi</strong>
+							          							          <img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/location-pin.png" height="30" width="30">
+							          <strong>Agra</strong>
+							          							          <img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/location-pin.png" height="30" width="30">
+							          <strong>Jaipur</strong>
+							          </td>
+						</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+    <div class="overviewBox">
+    	<strong class="serviceTitle">TOUR Overview</strong>
+		<div class="serviceDesc"><p>Golden Triangle Tour Package is the best bet of Indian tourism. Every year thousands of travellers visit explore the beautiful cities of Delhi-Agra-Jaipur. These three cities of Golden Triangle tour are a blend of awe inspiring culture and age old history of India. The main attractions of Golden Triangle trip are obviously th symbolises eternal love of an emperor for his beloved wife, the capital city of Delhi showcasing beautiful contrast of old an civilization, the dashing Amer Fort standing high atop Aravali hills in Jaipur, walled town of Fatehpur Sikri and many other historic and cultural sites. De Box Holidays has made it convenient for the travel Golden Triangle tours with group of like-minded people who join the handpicked to make the journey an everlasting experience for the travellers. Choose from any of the available dates. De Box Holidays has made it convenient for the travel Golden Triangle tours with group of like-minded people who join the handpicked to make the journey an everlasting experience for the travellers. Choose from any of the available dates. </p></div>
+	</div>
+      
+		<div class="docTitle w60">Day 1 - Delhi | Saturday 14-05-2022<span class="docTitleArrow"></span>
+		</div>
+		<div class="dayItineraryInfo">				<div class="itineraryTitle">
+					<p>تاريخ مركز نظام الدين</p>				</div>
+							<div class="itineraryDesc">
+				<div>في الآونة الأخيرة ، أخبر المركز محكمة دلهي العليا أنه يمكن تشغيل مسجد نظام الدين المركزي للمصلين لأداء الصلاة خلال شهر رمضان الذي من المتوقع أن يبدأ من 14 أبريل.</div>				</div>
+				<br>
+				<br>
+								<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service hotel">
+						<tbody><tr class="row-service">
+						<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/hotelthumbpackage.png" width="200" height="130"></div></td>
+						<td width="70%" align="left" valign="middle">
+							<table border="0" cellpadding="5" cellspacing="0">
+								<tbody>
+									<tr>
+										<td colspan="3"><strong class="serviceTitle">Guest Hotel | Aarti ceremony at Triveni Ghat</strong></td>
+									</tr>
+									<tr> 
+										<td width="15%"><strong class="subHeading">Category</strong></td> 
+										<td width="20%"><strong class="subHeading">Room Type</strong></td> 
+										<td width="30%"><strong class="subHeading">Meal Plan</strong></td> 
+									</tr> 
+									<tr> 
+										<td width="15%" valign="bottom"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/starh5.png" height="20">										</td>
+										<td width="20%">Deluxe</td> 
+									 	<td width="30%">AP</td>  
+							  		</tr>
+								</tbody>
+							</table>
+						</td>
+						</tr>
+						</tbody>
+					</table>
+					<div class="hr_line">
+						<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+					</div>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service hotel">
+						<tbody><tr class="row-service">
+						<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/hotelthumbpackage.png" width="200" height="130"></div></td>
+						<td width="70%" align="left" valign="middle">
+							<table border="0" cellpadding="5" cellspacing="0">
+								<tbody>
+									<tr>
+										<td colspan="3"><strong class="serviceTitle">Guest Hotel | Maharaja Great</strong></td>
+									</tr>
+									<tr> 
+										<td width="15%"><strong class="subHeading">Category</strong></td> 
+										<td width="20%"><strong class="subHeading">Room Type</strong></td> 
+										<td width="30%"><strong class="subHeading">Meal Plan</strong></td> 
+									</tr> 
+									<tr> 
+										<td width="15%" valign="bottom"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/starh3.png" height="20">										</td>
+										<td width="20%">Standard</td> 
+									 	<td width="30%">CP</td>  
+							  		</tr>
+								</tbody>
+							</table>
+						</td>
+						</tr>
+						</tbody>
+					</table>
+					<div class="hr_line">
+						<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+					</div>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service hotel">
+						<tbody><tr class="row-service">
+						<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/hotelthumbpackage.png" width="200" height="130"></div></td>
+						<td width="70%" align="left" valign="middle">
+							<table border="0" cellpadding="5" cellspacing="0">
+								<tbody>
+									<tr>
+										<td colspan="3"><strong class="serviceTitle">Guest Hotel | Adithya Hotel</strong></td>
+									</tr>
+									<tr> 
+										<td width="15%"><strong class="subHeading">Category</strong></td> 
+										<td width="20%"><strong class="subHeading">Room Type</strong></td> 
+										<td width="30%"><strong class="subHeading">Meal Plan</strong></td> 
+									</tr> 
+									<tr> 
+										<td width="15%" valign="bottom"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/starh4.png" height="20">										</td>
+										<td width="20%">Diamond Villa</td> 
+									 	<td width="30%">CP</td>  
+							  		</tr>
+								</tbody>
+							</table>
+						</td>
+						</tr>
+						</tbody>
+					</table>
+					<div class="hr_line">
+						<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+					</div>
+											<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service transfer">
+							<tbody><tr class="row-service">
+							<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/transfer.jpeg" width="200" height="130"></div>
+							</td>
+							<td width="70%" align="left" valign="middle">
+							   <table width="100%" border="0" cellpadding="5" cellspacing="0">
+								 	<tbody><tr>
+								 		<td colspan="3" align="left">
+								 			<strong class="serviceTitle">Airport to Hotel</strong>
+								 		</td>
+							     	</tr> 
+								  	<tr>
+									 	<td align="left" width="15%"><strong class="subHeading">Type</strong></td>
+									 	<td align="left" width="20%"><strong class="subHeading">VehicleName</strong></td>
+									 	<td align="left" width="25%"><strong class="subHeading">VehicleType</strong></td> 
+								  	</tr>
+								  	<tr>
+									 	<td align="left" width="15%">Private</td>
+									 	<td align="left" width="20%">mahindra xuv v1.2 </td>
+									 	<td align="left" width="25%">12 seater Traveller</td> 
+								  	</tr> 
+							   </tbody></table>								   
+							</td>
+							</tr>
+																					</tbody>
+						</table>
+						<div class="hr_line">
+							<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+						</div>
+												<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service transfer">
+							<tbody><tr class="row-service">
+							<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/transfer.jpeg" width="200" height="130"></div>
+							</td>
+							<td width="70%" align="left" valign="middle">
+							   <table width="100%" border="0" cellpadding="5" cellspacing="0">
+								 	<tbody><tr>
+								 		<td colspan="3" align="left">
+								 			<strong class="serviceTitle">Airport to Hotel</strong>
+								 		</td>
+							     	</tr> 
+								  	<tr>
+									 	<td align="left" width="15%"><strong class="subHeading">Type</strong></td>
+									 	<td align="left" width="20%"><strong class="subHeading">VehicleName</strong></td>
+									 	<td align="left" width="25%"><strong class="subHeading">VehicleType</strong></td> 
+								  	</tr>
+								  	<tr>
+									 	<td align="left" width="15%">Private</td>
+									 	<td align="left" width="20%">mahindra xuv v1.2 </td>
+									 	<td align="left" width="25%">12 seater Traveller</td> 
+								  	</tr> 
+							   </tbody></table>								   
+							</td>
+							</tr>
+																					</tbody>
+						</table>
+						<div class="hr_line">
+							<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+						</div>
+						 
+						<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table-service">
+							<tbody><tr class="row-service">
+							<td width="30%" align="left" valign="middle"><div class="imgbox"><img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/activity.jpeg" width="200" height="130"></div>
+					        </td>
+							<td width="70%" align="left" valign="middle">
+								<table width="100%" border="0" cellpadding="5" cellspacing="0">
+									<tbody>
+										<tr>
+											<td><strong class="serviceTitle">Desert Safari</strong></td>
+										</tr>
+										<tr>
+											<td><div class="serviceDesc">في القانون العام ، كان مطلوبًا من جميع الوحدات الأربع أن تكون موجودة في عقد إيجار مشترك. إن نقل مصالح الوكلاء في نفس الوقت يخلق وحدة الزمن. إن نقل مصالح الوكلاء في نفس الأداة يخلق وحدة الملكية. إن نقل نفس الفائدة (كرسوم بسيطة مطلقة) إلى الوكلاء يخلق وحدة الاهتمام. إن نقل حق مشترك في الحيازة أو التمتع يخلق وحدة الحيازة.</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+							</tr>
+							</tbody>
+						</table>
+						<div class="hr_line">
+							<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/seperator.png" width="100%">
+						</div>
+								</div>
+
+		  
+		<div class="docTitle w60">Day 2 - Agra | Sunday 15-05-2022<span class="docTitleArrow"></span>
+		</div>
+		<div class="dayItineraryInfo">		</div>
+
+		  
+		<div class="docTitle w60">Day 3 - Jaipur | Monday 16-05-2022<span class="docTitleArrow"></span>
+		</div>
+		<div class="dayItineraryInfo">				<div class="itineraryTitle">
+					<p>Delhi to Jaipur by Flight Delhi to Jaipur by Flight Travel to Jaipur by Flight</p>				</div>
+							<div class="itineraryDesc">
+				<div>wwe</div>				</div>
+				<br>
+				<br>
+					</div>
+
+			<br>	
+	<br>	
+	<div class="dayItineraryInfo ">
+		<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/end-of-tour.png" width="100%">
+	</div>
+	<br>
+	<br> 
+	<div class="docTitle w60">HOTEL PROPOSED<span class="docTitleArrow"></span></div>
+	<br>
+	<br> 
+	<div class="table-service pd30">
+		<div class="serviceTitle">Hotels Proposed</div>
+		<table border="1" cellpadding="8" cellspacing="0" bordercolor="#ccc" class="borderedTable table-service">
+		 	<tbody><tr>
+				<th width="20%" align="left" valign="middle"><strong>Dates</strong></th>
+				<th width="12%" align="left" valign="middle"><strong>City</strong></th>
+				<th width="27%" align="left" valign="middle"><strong>Hotel</strong></th>
+				<th width="16%" align="left" valign="middle"><strong>Room Type</strong></th>
+	 			<th width="25%" align="left" valign="middle"><strong>Remarks</strong></th>
+			</tr>
+			 
+			  	<tr>
+						<td valign="middle">
+						14 May 2022						</td>
+						<td valign="middle">Delhi</td>
+						<td valign="middle">Guest Hotel- Aarti ceremony at Triveni Ghat</td>
+						<td valign="middle">Deluxe</td>
+						<td valign="middle"></td>
+			  	</tr>
+			  	 
+			  	<tr>
+						<td valign="middle">
+						14 May 2022						</td>
+						<td valign="middle">Delhi</td>
+						<td valign="middle">Guest Hotel- Maharaja Great</td>
+						<td valign="middle">Standard</td>
+						<td valign="middle"></td>
+			  	</tr>
+			  	 
+			  	<tr>
+						<td valign="middle">
+						14 May 2022						</td>
+						<td valign="middle">Delhi</td>
+						<td valign="middle">Guest Hotel- Adithya Hotel</td>
+						<td valign="middle">Diamond Villa</td>
+						<td valign="middle"></td>
+			  	</tr>
+			  			</tbody></table>
+		<!-- Total Tour Cost and per person basis costs details -->
+		<br>
+		<br> 
+		<div class="serviceTitle">QUOTATION</div>
+		<table border="1" cellpadding="8" cellspacing="0" bordercolor="#ccc" class="borderedTable table-service">
+			<tbody><tr>
+								<th width="20%" align="right" rowspan="2" valign="middle"><strong>Total Cost(In INR)</strong></th>
+								<th width="80%" colspan="4" align="center" valign="middle"><strong>Per Person Cost(In INR)</strong></th>
+							</tr>
+			<tr>
+								<th width="20%" valign="middle"><div align="right"><strong>Single Basis</strong></div></th>
+								<th width="20%" valign="middle"><div align="right"><strong>Double Basis</strong></div></th>
+								<th width="20%" valign="middle"><div align="right"><strong>ExtraBed(Adult) Basis</strong></div></th>
+								<th width="20%" valign="middle"><div align="right"><strong>ExtraBed(child) Basis</strong></div></th>
+							</tr>
+			<tr>
+				<td valign="middle"><div align="right">
+					25334				</div></td>
+								<td valign="middle">
+					<div align="right">
+						8885					</div>
+				</td>
+								<td valign="middle">
+					<div align="right">
+						6717					</div>
+				</td>
+								<td valign="middle">
+					<div align="right">
+						6407					</div>
+				</td>
+								<td valign="middle">
+					<div align="right">
+						5168					</div>
+				</td>
+							</tr>
+		</tbody></table>
+	</div>
+	<br> 
+		<div class="docTitle w60">AIR FARE SUPPLEMEN<span class="docTitleArrow"></span></div>  
+	<div class="table-service pd30"> 
+		<div class="serviceTitle">Air Fare Supplement</div>
+		<table border="1" cellpadding="8" cellspacing="0" class="borderedTable table-service">
+			<tbody><tr>
+				<th width="12%" valign="middle" bgcolor="#233a49"><strong>Date</strong></th>
+				<th width="19%" valign="middle" bgcolor="#233a49"><strong>Sector</strong></th>
+				<th width="30%" valign="middle" bgcolor="#233a49"><strong>Flight/Timings</strong></th>
+				<th width="28%" valign="middle" bgcolor="#233a49"><strong>Class/Baggage</strong></th>
+				<th width="11%" align="right" valign="middle" bgcolor="#233a49"><strong>Fare</strong></th>
+			</tr>
+					  <tr>
+		  	<td colspan="5" align="center">Air fares are subject to change at the time of booking</td>
+		  </tr>
+		</tbody></table>
+	</div>
+	 
+	<div class="docTitle w60">INCLUSIONS<span class="docTitleArrow"></span></div>
+	<div class="serviceDesc pd30"><ul>
+<li>Well appointed A/c room Accommodation in above mentioned hotels.</li>
+<li>A/c Vehicle for all transfer &amp; Sightseeing at all the places/islands but not at disposal basis(Only Point to Point Service).</li>
+<li>Meals plan as mentioned above.</li>
+<li>All entry permits, entry tickets (Except Ross &amp; North bay Island) included to all sight-seeing points, inter island ferry tickets and forest area permits wherever applicable.</li>
+<li>Private Cruise tickets in Green Ocean in Deluxe class (Base category) from Port Blair - Havelock Island.</li>
+<li>GST included.</li>
+</ul></div>
+
+	<div class="docTitle w60">EXCLUSIONS<span class="docTitleArrow"></span></div>
+	<div class="serviceDesc pd30"><ul>
+<li>Any meals other than those mentioned above.</li>
+<li>Any Airfare.</li>
+<li>Tour guide services at any sightseeing place.</li>
+<li>Entrance fees of Rs. 30 per person at Ross Island and Rs. 10 per person at North Bay island to be paid directly.</li>
+<li>All Water sport activities like Snorkling, Scuba diving, Glass Bottom ride, Sea Walking Etc... Etc...</li>
+<li>Any portage at airports and hotels, tips, insurance, wine, mineral water, telephone charges, and all items of personal nature.</li>
+<li>Any services not specifically mentioned in the inclusions.</li>
+<li>Expenses caused by factors beyond our control like flight delays, cancellation of Ferry operation, bad weather, vehicle malfunctions, political disturbances etc.</li>
+</ul></div>
+	<br>	
+	<br>	
+	<div class="dayItineraryInfo ">
+		<img src="http://localhost/GitHub/outbound1.3_live/TravCRMExtension/travcrm-dev/images/generated-by-TRAVCRM.png" width="100%">
+	</div> 
+</div> 
+</body></html>

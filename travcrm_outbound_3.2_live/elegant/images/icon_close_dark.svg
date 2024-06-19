@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_close_dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="icon_close_dark" stroke="#979797" stroke-width="2">
+            <g id="close" transform="translate(7.000000, 7.000000)">
+                <path d="M0.384615385,0.384615385 L9.64738045,9.64738045" id="Line"></path>
+                <path d="M0.384615385,0.384615385 L9.64738045,9.64738045" id="Line" transform="translate(5.000000, 5.000000) scale(-1, 1) translate(-5.000000, -5.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

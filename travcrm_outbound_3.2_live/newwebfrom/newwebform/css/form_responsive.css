@@ -1,0 +1,50 @@
+@media only screen and (max-width:1300px){
+.autorize-popup {
+    width: 40% !important;
+}   
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+.autorize-popup {
+    width: 50% !important;
+    left: 25% !important;
+    top: 10% !important;
+  }  
+}
+
+@media only screen and (max-width:767px){
+ .autorize-popup {
+    left: 2.9% !important;
+ }  
+ .xbtn {
+    left: 120px !important;
+}
+.popupdateinnernew {
+    width: 140px !important;
+}
+.personcost{
+    display: -webkit-box;
+}
+#adults{
+    padding-left:0px !important;
+    font-size:11px !important;
+}
+#infant{
+    padding-left:0px !important;
+    font-size:11px !important;
+}
+#children{
+    padding-left:0px !important;
+    font-size:11px !important;
+}
+}
+@media only screen and (max-width:375px){
+.autorize-popup {
+    left: 2% !important;
+    min-width: 330px;
+    height:95% !important;*/
+    position:fixed !important;
+    overflow-y:auto !important;
+}  
+
+}

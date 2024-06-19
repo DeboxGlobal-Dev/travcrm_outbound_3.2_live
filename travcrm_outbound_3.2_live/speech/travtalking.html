@@ -1,0 +1,404 @@
+<script src="//cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+<div style="display:none;">
+ <div class="app"> 
+
+                <h3>Add New Note</h3>
+
+                <div class="input-single">
+
+                    
+
+                </div>         
+ 
+ 
+
+                <button id="save-note-btn" title="Save Note" style="display:none;">Save Note</button>   
+ 
+
+                
+
+                <h3>My Notes</h3>
+
+                <ul id="notes">
+
+                    <li>
+
+                        <p class="no-notes">You don't have any notes.</p>
+
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+
+
+
+
+<form class="col s8 offset-s2">
+
+     
+
+     
+
+    <div class="row">
+
+      <div class="input-field col s12">
+
+         <input type="range" id="pitch" min="0" max="2" value="1" style="display:none;" /><input type="range" id="rate" min="1" max="100" value="10" style="display:none;" /><select id="voices" style="display:none;"></select>
+
+   
+
+      </div>
+
+    </div>
+
+    <a href="#" id="speak" onclick="speektotalk();"  class="waves-effect waves-light btn">Speak</a>
+
+  </form>
+
+
+
+<script>
+
+  
+
+    speechSynthesis.onvoiceschanged = function() {
+
+      var $voicelist = 9;
+
+
+
+      if($voicelist.find('option').length == 0) {
+
+        speechSynthesis.getVoices().forEach(function(voice, index) {
+
+          var $option = $('<option>')
+
+          .val(index)
+
+          .html(voice.name + (voice.default ? ' (default)' :''));
+
+
+
+          $voicelist.append($option);
+
+        });
+
+
+
+        $voicelist.material_select();
+
+      }
+
+    }
+
+
+
+    function speektotalk(){
+
+      var text = $('#note-textarea').val();
+
+      var msg = new SpeechSynthesisUtterance();
+
+      var voices = window.speechSynthesis.getVoices();
+
+      msg.voice = voices[$('#voices').val()];
+
+      msg.rate = $('#rate').val() / 10;
+
+      msg.pitch = $('#pitch').val();
+
+      msg.text = text;
+
+
+
+      msg.onend = function(e) {
+
+        console.log('Finished in ' + event.elapsedTime + ' seconds.');
+
+      };
+
+
+
+      speechSynthesis.speak(msg);
+
+    } 
+ 
+
+
+</script>
+
+<script src="speech/script.js"></script> 
+
+<script>
+
+
+function statvoicing(){
+setTimeout(function(){ 
+var recordingtest = $('#recording-instructions').text(); 
+if(recordingtest!=''){ 
+$('#recording-instructions').text('Press mic button and speek');
+
+stopwriting(); 
+stoprec();
+savevoicetottext(); 
+callvoicegotopage();
+} 
+}, 6000);
+}
+
+
+function hasNumbers(t)
+{
+var regex = /\d/g;
+return regex.test(t);
+}
+
+function wordInString(s, word){
+  return new RegExp( '\\b' + word + '\\b', 'i').test(s);
+}
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
+function openInNewTab(id, type){
+		$.ajax({
+			type: "GET",
+			data: "key="+id,
+			async: false,
+			url: id,
+			success: function (msg) {
+				window.open(id, "autologin", "toolbar=no,width=500");
+			}
+		});
+	}
+
+
+function callvoicegotopage(){ 
+var voicetext = $('#note-textarea').val(); 
+
+if(voicetext!=''){
+
+var allreadywhatis=0;
+allreadyquery=0;
+var getsearch=0;
+
+//------------------Open Websites------------------
+
+
+var voicetextfilter = wordInString(voicetext, 'query'); 
+if(voicetextfilter && hasNumbers(voicetext)){ 
+$('#note-textarea').val('Opening Query'); 
+ 
+var sd = voicetext.replace(/[^0-9]/gi, ''); // Replace everything that is not a number with nothing
+var number = parseInt(sd, 10); 
+  
+$('#voiceactiondiv').load('voiceaction.php?action=query&id='+number);
+
+getsearch=1;
+allreadyquery=1;
+}
+
+
+
+
+
+
+
+
+
+
+var voicetextfilter = wordInString(voicetext, 'who is'); 
+if(voicetextfilter){
+$('#note-textarea').val('Opening Gooble Search'); 
+speektotalk(); 
+var voicetext = voicetext.replace("who is", "");
+voicetext = voicetext.replace(" ", ""); 
+voicetext = voicetext.replace("http://", "");  
+window.open('https://www.google.com/search?q='+voicetext+'', '_blank');
+getsearch=1;
+}
+
+
+var voicetextfilter = wordInString(voicetext, 'What is your');
+if(voicetextfilter){ 
+$('#note-textarea').val('I dont really like talking about myself.'); 
+speektotalk(); 
+allreadywhatis=1;
+getsearch=1;
+}
+
+
+
+
+var voicetextfilter = wordInString(voicetext, 'what is');
+ if(allreadywhatis!=1){
+if(voicetextfilter){
+$('#note-textarea').val('Opening Gooble Search'); 
+speektotalk(); 
+var voicetext = voicetext.replace("what is", "");
+voicetext = voicetext.replace(" ", ""); 
+voicetext = voicetext.replace("http://", "");  
+window.open('https://www.google.com/search?q='+voicetext+'', '_blank');
+getsearch=1;
+}
+}
+
+
+
+
+var voicetextfilter = wordInString(voicetext, 'who are you');
+if(voicetextfilter){ 
+$('#note-textarea').val('I am Trav CRM voice assistant.'); 
+speektotalk(); 
+getsearch=1;
+}
+
+ 
+ 
+
+
+//------------------CRM Pages Search------------------
+
+
+
+
+if(corporatevoice==1){
+var voicetextfilter = wordInString(voicetext, 'search');
+if(voicetextfilter){ 
+voicetext = voicetext.replace("search", "");
+$('#note-textarea').val('Searching '+voicetext+''); 
+speektotalk(); 
+$('#searchField').val(voicetext);
+$('#innersearchfrm').submit();
+getsearch=1;
+
+}
+
+}
+
+
+var voicetextfilter = wordInString(voicetext, 'open'); 
+if(voicetextfilter && allreadyquery!=1){
+$('#note-textarea').val('Opening'); 
+speektotalk(); 
+var voicetext = voicetext.replace("open", "");
+voicetext = voicetext.replace(" ", ""); 
+voicetext = voicetext.replace("http://", "");  
+window.open('https://www.google.com/search?q='+voicetext+'', '_blank');
+getsearch=1;
+}
+
+//--------------------------CRM Query Report---------------------------
+
+
+
+
+var voicetextfilter = wordInString(voicetext, 'query report'); 
+if(voicetextfilter){  
+$('#voiceactiondiv').load('voiceaction.php?action=queryreport'); 
+getsearch=1;
+allreadyquery=1;
+ 
+}
+
+
+
+ 
+var voicetextfilter = wordInString(voicetext, 'sales report'); 
+if(voicetextfilter){  
+$('#voiceactiondiv').load('voiceaction.php?action=salesreport'); 
+getsearch=1;
+allreadyquery=1;
+ 
+}
+
+ 
+var voicetextfilter = wordInString(voicetext, 'monthly collection and expenses'); 
+if(voicetextfilter){  
+$('#voiceactiondiv').load('voiceaction.php?action=monthlycollection'); 
+getsearch=1;
+allreadyquery=1;
+ 
+}
+
+
+
+//------------------CRM Pages Search------------------
+
+
+var voicetextfilter = wordInString(voicetext, 'Hi how can i assist you'); 
+if(voicetextfilter){ 
+getsearch=1;
+}
+
+
+
+
+
+
+if(getsearch==0){
+$('#note-textarea').val('I really dont understand what you are trying to say'); 
+speektotalk(); 
+}
+
+
+
+
+}
+
+
+setTimeout(function(){ 
+$('#note-textarea').val(''); 
+}, 4000);
+
+//speektotalk(); 
+}
+
+
+/*
+recognition.start();
+var d=0;
+setInterval(function(){ 
+
+var notetextarea = $('#note-textarea').val();  
+if(notetextarea=='hi David'){
+$('.micstartrecstart').show();  
+savevoicetottext(); 
+startrec();
+$('#note-textarea').val('Hi how can i assist you'); 
+speektotalk();   
+ $('.micbox').show();
+ d++;
+} 
+if(d>0 && notetextarea!=''){
+callvoicegotopage(); 
+startrec();
+}
+
+savevoicetottext(); 
+recognition.start(); 
+
+
+}, 5000);*/
+
+$('#voices').val('9');
+
+
+
+
+
+</script>
+
+<style>
+
+#carbonads{display:none;}
+
+</style>
+ <div id="voiceactiondiv"></div>
+</div>

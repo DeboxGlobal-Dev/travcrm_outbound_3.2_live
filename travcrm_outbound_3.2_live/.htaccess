@@ -1,0 +1,33 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+ErrorDocument 403 /live/4042.html
+ErrorDocument 404 /live/4042.html
+
+RewriteCond %{HTTP:Authorization} .+
+RewriteRule ^ - [E=HTTP_AUTHORIZATION:%0]
+    
+RewriteRule ^submitfeedback.html$ submit-feedback.php  [NC,L]
+RewriteRule ^confrence/(.*)/(.*).html$ display_confrence.php?id=$1&pid=$2 [L]
+RewriteRule ^day-wise-plan.crm$ itineraryshowpdf.php  [NC,L]
+RewriteRule ^download/(.*)$ dirfiles/$1  [NC,L]  
+RewriteRule ^login.crm$ crm_login_page.php  [NC,L]
+RewriteRule ^forgot-password.crm$ forgotpassword.php  [NC,L]
+RewriteRule ^reset-password.crm$ resetpassword.php  [NC,L]
+RewriteRule ^logout.crm$ crm_logout_page.php  [NC,L]
+RewriteRule ^setup.crm$ crm_setup.php  [NC,L]
+RewriteRule ^setupsetting.crm$ crm_setup_setting.php  [NC,L]
+RewriteRule ^showpage.crm$ crm_main_pages.php  [NC,L]
+RewriteRule ^frm_action.crm$ frmaction.php  [NC,L]
+RewriteRule ^expired.crm$ expired_page.php  [NC,L]
+RewriteRule ^downloadfile.crm$ dirfiles  [NC,L]
+
+
+RewriteRule ^Elegant/Home/(.*)$ elegant/home.php?id=$1 [NC,L]
+RewriteRule ^Elegant/Overview/(.*)$ elegant/overview.php?id=$1 [NC,L]
+RewriteRule ^Elegant/Destinations/(.*)$ elegant/destinations.php?id=$1 [NC,L]
+RewriteRule ^Elegant/Accommodation/(.*)$ elegant/accommodation.php?id=$1 [NC,L]
+RewriteRule ^Elegant/DailyInfo/(.*)$ elegant/dailyInfo.php?id=$1 [NC,L]
+RewriteRule ^Elegant/Transport/(.*)$ elegant/transport.php?id=$1 [NC,L]
+RewriteRule ^Elegant/Information/(.*)$ elegant/information.php?id=$1 [NC,L]

@@ -1,0 +1,16 @@
+[11-Feb-2020 11:45:13 UTC] PHP Warning:  file_put_contents(/home/your_home_foler/your_face_storage/faces/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 14
+[11-Feb-2020 11:45:13 UTC] PHP Warning:  A non-numeric value encountered in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 24
+[11-Feb-2020 11:45:13 UTC] PHP Warning:  imagecreatefrompng(/home/your_home_foler/your_face_storage/faces/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 28
+[11-Feb-2020 11:45:13 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 29
+[11-Feb-2020 11:45:58 UTC] PHP Warning:  file_put_contents(/home/your_home_foler/your_face_storage/faces_tmp/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 17
+[11-Feb-2020 11:45:58 UTC] PHP Warning:  A non-numeric value encountered in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 27
+[11-Feb-2020 11:45:58 UTC] PHP Warning:  imagecreatefrompng(/home/your_home_foler/your_face_storage/faces_tmp/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 31
+[11-Feb-2020 11:45:58 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 32
+[11-Feb-2020 11:46:18 UTC] PHP Warning:  file_put_contents(/home/your_home_foler/your_face_storage/faces_tmp/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 17
+[11-Feb-2020 11:46:18 UTC] PHP Warning:  A non-numeric value encountered in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 27
+[11-Feb-2020 11:46:18 UTC] PHP Warning:  imagecreatefrompng(/home/your_home_foler/your_face_storage/faces_tmp/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 31
+[11-Feb-2020 11:46:18 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/deboxin/public_html/travcrm-inbound/face/login.php on line 32
+[11-Feb-2020 11:46:56 UTC] PHP Warning:  file_put_contents(/home/your_home_foler/your_face_storage/faces/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 14
+[11-Feb-2020 11:46:56 UTC] PHP Warning:  A non-numeric value encountered in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 24
+[11-Feb-2020 11:46:56 UTC] PHP Warning:  imagecreatefrompng(/home/your_home_foler/your_face_storage/faces/d5db631b528b3b751d6477222530c54c): failed to open stream: No such file or directory in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 28
+[11-Feb-2020 11:46:56 UTC] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/deboxin/public_html/travcrm-inbound/face/register.php on line 29

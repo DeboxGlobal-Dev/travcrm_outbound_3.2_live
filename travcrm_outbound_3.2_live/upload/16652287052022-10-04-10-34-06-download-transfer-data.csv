@@ -1,0 +1,4 @@
+ "Transfer Name","Transfer Detail","Transfer Type","Tranfer City",Supplier,Currency,"From Validity","To Validity","Vehicle Name","GST Slab Name","Vehicle Cost","Parking Fee","Representative Entry Fee",Assistance,"Additional Allowance","Inter-State & Toll",Miscellaneous,"Market Type",Remarks
+"Airport to Astha Hotel",,Normal,Jaipur,"Praveen Kumar Sharma",INR,05/01/2022,06/01/2022,"Tata Safari","Slab 5",4000,300,0,0,0,0,0,General,
+"Arrival Transfer","You will be picked up by your driver/guide depending on your flight's arrival time. You will then enjoy New Delhi scenery while traveling to your hotel in New Delhi, worry free.",Arrival,Delhi,"Peter Parker PVT LTD",INR,09/07/2022,11/07/2022,"Tata Safari","Slab 5",3000,100,1000,200,2,0,0,General,
+"home to hotel","go to hotel",Arrival,Delhi,"Peter Parker PVT LTD",INR,26/05/2022,31/05/2022,,"Slab 5",5000,500,200,50,0,0,0,General,

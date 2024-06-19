@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_night</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Navigation-+-Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_night">
+            <g>
+                <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                <path d="M4,11.9776658 C4,16.4082786 7.59172137,20 12.0223342,20 C16.1692476,20 19.5812612,16.8535202 20.0012124,12.8177231 C18.8719626,13.9476537 17.3115127,14.6465957 15.5878161,14.6465957 C12.1417839,14.6465957 9.34822281,11.8530346 9.34822281,8.40700237 C9.34822281,6.68655671 10.0445309,5.12874251 11.1707068,4 C7.14046773,4.4252621 4,7.83471617 4,11.9776658 Z" id="Combined-Shape" stroke="#43484D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

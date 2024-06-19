@@ -1,0 +1,79 @@
+.anim-slider{background-color: #fff;}
+.anim-slide{opacity: 0;}
+.anim-slide-this{opacity: 1;}
+li.anim-slide:nth-of-type(1){
+background:#fff url("../images/default1.jpg") 100%/cover;
+}
+li.anim-slide:nth-of-type(2){
+background:#fff url("../images/default2.jpg") 100%/cover;
+}
+li.anim-slide:nth-of-type(3){
+background:#fff url("../images/default3.jpg") 100%/cover;
+}
+ 
+h1#looks{background-color:#fff;color:#34495e;}
+h1#amazing{background-color:#34495e;color:#fff;margin: 0px -5px;}
+h1#place{background-color:#3498db;color:#fff;}
+div#img1{
+    background:#fff url("../images/diving1.jpg") 100%/cover;
+}
+div#img2{
+    background:#fff url("../images/diving2.jpg") 100%/cover;
+}
+div#img3{
+    background:#fff url("../images/diving3.jpg") 100%/contain;
+}
+/*div#img4{
+    background:#fff url("../images/37332_Taj Mahal 2.jpg") 100%/contain;
+}*/
+
+h1.T{top:20%;left:42%;}
+h1.r{top:20%;left: 44%;}
+h1.a{top:20%;left: 46%;}
+h1.v{top:20%;left: 48%;}
+h1.CRM{top:20%;left: 50%;}
+h1.mark{
+    top:20%;
+    left: 56%;
+    transform: rotateY(0deg) rotate(0deg);
+    transition: transform 2s;
+}
+.rotate45{ 
+    transform: rotateY(0deg) rotate(-45deg)!important;
+}
+
+div#demo{text-align: center;}
+div#demo>a{display:inline-block;text-decoration: none;}
+div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
+p#credits{z-index:-1;position: fixed;bottom: 0px;width: 100%;text-align: center;font-size: 14px;}
+p#credits>a{font-weight: bold;color: #999;text-decoration: none;}
+img#github-logo{z-index:-1;position: fixed;bottom: -20px;right: 2%;opacity: 0.4;}
+.anim-slider{
+	height: auto;
+	min-height: 635px;
+}
+
+.anim-arrows .anim-arrows-prev {
+    opacity: 1;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -18px;
+    cursor: pointer;
+    transition: opacity 0.6s;
+    background: url('../images/icon_gallery_nav_left-36.svg') transparent no-repeat center center;
+}
+.anim-arrows .anim-arrows-next {
+    opacity: 1;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -18px;
+    cursor: pointer;
+    transition: opacity 0.6s;
+    background: url('../images/icon_gallery_nav_right-36.svg') transparent no-repeat center center;
+}

@@ -1,0 +1,217 @@
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:11 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:12 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:13 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:19 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:20 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:21 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 14
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: destinationId in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: categoryId in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: tourType in /home/travcrm/public_html/demo/report/report.php on line 23
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: clientType in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: Clients in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:32:22 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 121
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: tqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 13
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: confirmedqueryTotl in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: revertedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: assignedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 24
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: sentqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 28
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: followQueryTotal in /home/travcrm/public_html/demo/report/report.php on line 32
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: lostqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 38
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: grossTotal in /home/travcrm/public_html/demo/report/report.php on line 42
+[24-Sep-2018 13:32:44 Etc/GMT] PHP Notice:  Undefined variable: totalpaxTotal in /home/travcrm/public_html/demo/report/report.php on line 46
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: tqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 13
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: confirmedqueryTotl in /home/travcrm/public_html/demo/report/report.php on line 17
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: revertedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 20
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: assignedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 24
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: sentqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 28
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: followQueryTotal in /home/travcrm/public_html/demo/report/report.php on line 32
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: lostqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 38
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: grossTotal in /home/travcrm/public_html/demo/report/report.php on line 42
+[24-Sep-2018 13:32:45 Etc/GMT] PHP Notice:  Undefined variable: totalpaxTotal in /home/travcrm/public_html/demo/report/report.php on line 46
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Notice:  Undefined variable: fromDate in /home/travcrm/public_html/demo/report/report.php on line 9
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 39
+[24-Sep-2018 13:34:46 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 139
+[24-Sep-2018 13:35:49 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:49 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:49 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:49 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:35:49 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 134
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: tqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 22
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: confirmedqueryTotl in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: revertedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: assignedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 33
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: sentqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 37
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: followQueryTotal in /home/travcrm/public_html/demo/report/report.php on line 41
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: lostqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 47
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: grossTotal in /home/travcrm/public_html/demo/report/report.php on line 51
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: totalpaxTotal in /home/travcrm/public_html/demo/report/report.php on line 55
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: tqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 22
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: confirmedqueryTotl in /home/travcrm/public_html/demo/report/report.php on line 26
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: revertedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 29
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: assignedqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 33
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: sentqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 37
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: followQueryTotal in /home/travcrm/public_html/demo/report/report.php on line 41
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: lostqueryTotal in /home/travcrm/public_html/demo/report/report.php on line 47
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: grossTotal in /home/travcrm/public_html/demo/report/report.php on line 51
+[24-Sep-2018 13:35:59 Etc/GMT] PHP Notice:  Undefined variable: totalpaxTotal in /home/travcrm/public_html/demo/report/report.php on line 55
+[24-Sep-2018 13:36:33 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:36:33 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:36:33 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:36:33 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:36:33 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 43
+[24-Sep-2018 13:37:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:37:21 Etc/GMT] PHP Warning:  include(../config/inc.php): failed to open stream: No such file or directory in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:37:21 Etc/GMT] PHP Warning:  include(): Failed opening '../config/inc.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/travcrm/public_html/demo/report/report.php on line 2
+[24-Sep-2018 13:37:21 Etc/GMT] PHP Notice:  Undefined variable: assignto in /home/travcrm/public_html/demo/report/report.php on line 34
+[24-Sep-2018 13:37:21 Etc/GMT] PHP Fatal error:  Call to undefined function GetPageRecord() in /home/travcrm/public_html/demo/report/report.php on line 134
+[19-Jan-2019 12:29:03 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:30:02 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:31:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:32:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:33:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:34:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:35:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[19-Jan-2019 12:36:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:12:11 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:12:59 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:18:23 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:18:36 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:28:00 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:28:25 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:38:29 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:38:41 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:39:37 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:39:49 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:44:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:44:49 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:47:00 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 13:50:08 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[28-Jan-2019 14:45:13 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[29-Jan-2019 15:19:37 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[29-Jan-2019 17:55:37 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:30:18 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:30:29 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:34:19 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:35:01 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:35:09 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:51:00 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:51:32 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:53:56 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 11:54:03 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 12:06:58 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 12:07:06 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 12:15:26 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 12:47:26 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 12:47:42 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229
+[31-Jan-2019 15:22:36 Asia/Calcutta] PHP Notice:  Constant _DIVISION_MASTER_ already defined in /home/deboxglobal/public_html/mice/config/dbtable.php on line 229

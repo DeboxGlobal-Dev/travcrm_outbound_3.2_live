@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_map_focused</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_map_focused">
+            <g id="icon_map">
+                <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                <polygon id="Path-3" stroke="#43484D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" points="3 7 3 20 9 18 15 20 21 18 21 5 15 7 9 5"></polygon>
+                <path d="M8.8,17.5037353 L8.8,5.45463898" id="Line-4" stroke="#43484D" stroke-width="1.6" stroke-linecap="square"></path>
+                <path d="M14.8,19.5 L14.8,7.49625059" id="Line-4" stroke="#43484D" stroke-width="1.6" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+Table - quotationPassportRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - visaTypeMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - passportCostMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - passportTypeMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - insuranceCostMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - InsuranceTypeMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - visaRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - quotationVisaRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - insuranceRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - passportRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - finalServiceMarkup truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - finalQuoteVisa truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - finalQuoteInsurance truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - finalQuotePassport truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table mice_guestListMaster: Table 'travcrm_Outbound_3.2_2.mice_guestListMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table hotelWiseRoomMaster: Table 'travcrm_Outbound_3.2_2.hotelWiseRoomMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - trainTimeLineMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - finalPackWiseRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table airportHubMaster: Table 'travcrm_Outbound_3.2_2.airportHubMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - cruiseNameMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - cabinTypeMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - cruiseServiceTiming truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - cruiseRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table quotationCruiseRateMaster: Table 'travcrm_Outbound_3.2_2.quotationCruiseRateMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table quotationCruiseMaster: Table 'travcrm_Outbound_3.2_2.quotationCruiseMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table finalQuoteCruise: Table 'travcrm_Outbound_3.2_2.finalQuoteCruise' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table agentDocumentMaster: Table 'travcrm_Outbound_3.2_2.agentDocumentMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - quotationAdditionalRateMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - flightQueryMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - visaQueryMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Table - insuranceQueryMaster truncated successfully, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table quotationMiceServicesRateMaster: Table 'travcrm_Outbound_3.2_2.quotationMiceServicesRateMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table quotationMiceServicesMaster: Table 'travcrm_Outbound_3.2_2.quotationMiceServicesMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table assignFlightGuestMaster: Table 'travcrm_Outbound_3.2_2.assignFlightGuestMaster' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149
+Error truncating table finalQuoteMiceServices: Table 'travcrm_Outbound_3.2_2.finalQuoteMiceServices' doesn't exist, Added by- Administrator CRM, IP Address- 152.58.74.149

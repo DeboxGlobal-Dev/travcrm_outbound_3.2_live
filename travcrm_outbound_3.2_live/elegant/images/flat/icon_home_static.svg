@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Navigation-+-Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_home">
+            <g>
+                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                <path d="M4.44444444,12.4705882 L3.93763241,12.4705882 L3.93763241,12.4705882 C3.38534766,12.4705882 2.93763241,12.022873 2.93763241,11.4705882 C2.93763241,11.1603008 3.08166871,10.867592 3.32751221,10.6782794 L12,4 L20.6724878,10.6782794 L20.6724878,10.6782794 C21.1100679,11.0152394 21.1916365,11.6431283 20.8546765,12.0807084 C20.6653638,12.3265519 20.372655,12.4705882 20.0623676,12.4705882 L19.5555556,12.4705882 L19.5555556,20 L14.4444444,20 L14.4444444,16 L14.4444444,16 C14.4444444,15.4477153 13.9967292,15 13.4444444,15 L10.5555556,15 L10.5555556,15 C10.0032708,15 9.55555556,15.4477153 9.55555556,16 L9.55555556,20 L4.44444444,20 L4.44444444,12.4705882 Z" id="Path-2" stroke="#FFFFFF" stroke-width="1.6"></path>
+                <path d="M16.8,7 L16.8,5.5" id="Line" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

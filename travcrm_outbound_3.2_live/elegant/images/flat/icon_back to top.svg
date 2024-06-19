@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="9px" viewBox="0 0 16 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_back to top</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="return-to-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_back-to-top" transform="translate(-4.000000, -8.000000)">
+            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+            <path d="M18.9186191,16.3238535 L18.9550455,16.283211 L18.9550455,16.283211 C19.3168354,15.8795475 19.2911364,15.2611283 18.8971026,14.8888737 L11.6051876,8 L4.31327269,14.8888737 L4.31327269,14.8888737 C3.91923887,15.2611283 3.89353992,15.8795475 4.25532977,16.283211 L4.2917562,16.3238535 L4.2917562,16.3238535 C4.66036595,16.7351262 5.29258565,16.7697115 5.70385843,16.4011017 C5.70644674,16.3987819 5.70902294,16.3964486 5.71158691,16.394102 L11.6051876,11 L17.4987884,16.394102 L17.4987884,16.394102 C17.9061953,16.76698 18.5387412,16.7389889 18.9116193,16.3315819 C18.913966,16.329018 18.9162993,16.3264418 18.9186191,16.3238535 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

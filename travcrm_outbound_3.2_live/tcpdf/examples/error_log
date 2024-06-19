@@ -1,0 +1,5 @@
+[09-Jan-2024 06:09:28 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/travcrm/public_html/travcrm_outbound_3.2_dev/tcpdf/tcpdf.php on line 16899
+[09-Jan-2024 06:09:28 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/travcrm/public_html/travcrm_outbound_3.2_dev/tcpdf/tcpdf.php on line 16899
+[09-Jan-2024 06:09:28 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/travcrm/public_html/travcrm_outbound_3.2_dev/tcpdf/tcpdf.php on line 16902
+[09-Jan-2024 06:09:28 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /home/travcrm/public_html/travcrm_outbound_3.2_dev/tcpdf/include/tcpdf_images.php on line 318
+[09-Jan-2024 06:09:28 UTC] PHP Deprecated:  The each() function is deprecated. This message will be suppressed on further calls in /home/travcrm/public_html/travcrm_outbound_3.2_dev/tcpdf/tcpdf.php on line 16548

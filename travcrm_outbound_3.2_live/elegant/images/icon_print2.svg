@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_print</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Navigation-+-Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_print">
+            <g>
+                <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                <g id="icon-print" transform="translate(2.000000, 3.000000)">
+                    <path d="M4.54012784,14.3999018 L0,14.3999018 L0,6.5 L0,6.5 C-1.3527075e-16,5.3954305 0.8954305,4.5 2,4.5 L18,4.5 L18,4.5 C19.1045695,4.5 20,5.3954305 20,6.5 L20,14.3999018 L15.4545455,14.3999018" id="Stroke-27" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"></path>
+                    <path d="M17.2727273,8.1 C16.7727273,8.1 16.3636364,7.695 16.3636364,7.2 C16.3636364,6.705 16.7727273,6.3 17.2727273,6.3 C17.7727273,6.3 18.1818182,6.705 18.1818182,7.2 C18.1818182,7.695 17.7727273,8.1 17.2727273,8.1 Z" id="Path" fill="#FFFFFF"></path>
+                    <path d="M4.54545455,17 L4.54545455,10.9 L4.54545455,10.9 C4.54545455,10.3477153 4.9931698,9.9 5.54545455,9.9 L14.4545455,9.9 L14.4545455,9.9 C15.0068302,9.9 15.4545455,10.3477153 15.4545455,10.9 L15.4545455,17 L15.4545455,17 C15.4545455,17.5522847 15.0068302,18 14.4545455,18 L5.54545455,18 L5.54545455,18 C4.9931698,18 4.54545455,17.5522847 4.54545455,17 Z" id="Stroke-29" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M3.63636364,3.6 L3.63636364,1 L3.63636364,1 C3.63636364,0.44771525 4.08407889,1.01453063e-16 4.63636364,0 L15.3636364,0 L15.3636364,-8.8817842e-16 C15.9159211,-9.89631482e-16 16.3636364,0.44771525 16.3636364,1 L16.3636364,3.6" id="Stroke-31" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

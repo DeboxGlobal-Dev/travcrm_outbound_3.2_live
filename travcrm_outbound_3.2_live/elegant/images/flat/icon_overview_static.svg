@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_overview</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Navigation-+-Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon_overview">
+            <g>
+                <rect id="Rectangle-2" x="0" y="0" width="24" height="24"></rect>
+                <g id="Group" transform="translate(2.000000, 6.000000)" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12.3809524,6 C12.3809524,7.3805 11.3147619,8.5 10,8.5 C8.6852381,8.5 7.61904762,7.3805 7.61904762,6 C7.61904762,4.6195 8.6852381,3.5 10,3.5 C11.3147619,3.5 12.3809524,4.6195 12.3809524,6 L12.3809524,6 Z" id="Stroke-92"></path>
+                    <path d="M0,6 C1.42714286,2.661 6.22714286,0 10.0180952,0 C13.8095238,0 18.5280952,2.61642857 20,5.91642857" id="Stroke-94"></path>
+                    <path d="M0,6 C1.42714286,9.339 6.22714286,12 10.0180952,12 C13.8095238,12 18.5280952,9.38357143 20,6.08357143" id="Stroke-96"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

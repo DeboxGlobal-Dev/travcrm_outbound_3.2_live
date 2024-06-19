@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Bangkok Tour Package Itinerary</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta charset="utf-8" />
+<link rel="icon" href="favicon.png" />
+<meta content="eTravel.flights.searches.new" name="js-namespace">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+<link href="css/calendar.css" media="all" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.ui.css">
+<link rel="stylesheet" href="css/jquery.formstyler.css">
+<link rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<style>
+.loader, .loader:before, .loader:after {
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation: load7 1.8s infinite ease-in-out;
+	animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+	color: #f25f5c;
+	font-size: 10px;
+	margin: 0px auto;
+	position: relative;
+	text-indent: -9999em;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+.loader:before, .loader:after {
+	content: '';
+	position: absolute;
+	top: 0;
+}
+.loader:before {
+	left: -3.5em;
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+.loader:after {
+	left: 3.5em;
+}
+ @-webkit-keyframes load7 {
+0%, 80%, 100% {
+box-shadow: 0 2.5em 0 -1.3em;
+}
+ 40% {
+box-shadow: 0 2.5em 0 0;
+}
+}
+ @keyframes load7 {
+0%, 80%, 100% {
+box-shadow: 0 2.5em 0 -1.3em;
+}
+ 40% {
+box-shadow: 0 2.5em 0 0;
+}
+}
+.tour-item .cat-list-item-rb .offer-slider-r b {
+	text-decoration: line-through;
+}
+.offer-slider-r span {
+	display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- // authorize // -->
+
+<div class="overlay"></div>
+<div class="autorize-popup"> 
+  
+  <!--<div class="autorize-tabs"> <a href="#" class="autorize-close"></a>
+
+
+    <div class="clear"></div>
+
+
+  </div>-->
+  
+  <div class="autorize-padding">
+    <h6 class="autorize-lbl" id="pop-title">Check Discounted Bangkok Tour Packages</h6>
+    <div class="side-block fly-in" id="formright_1">
+      <form name="frm_one">
+        <div class="side-block-search">
+          <div class="page-search-p" style="padding-top:0;">
+            <div class="srch-tab-line">
+              <div class="srch-tab-left">
+                <label>Start Date</label>
+                <div class="input-a">
+                  <input type="text" autocomplete="off"  data-role="none" readonly value="" class="date-inpt" placeholder="dd/mm/yy" name="check_in" id="check_in">
+                  <span class="date-icon"></span></div>
+              </div>
+              <div class="srch-tab-right">
+                <label>End Date</label>
+                <div class="input-a">
+                  <input type="text" autocomplete="off" data-role="none" readonly value="" class="date-inpt" placeholder="dd/mm/yy" name="check_out" id="check_out">
+                  <span class="date-icon"></span></div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="srch-tab-line" id="email_phone" style="display:none">
+              <div class="srch-tab-left"> 
+                
+                <!-- <label>My Email</label>-->
+                
+                <div class="input-a">
+                  <input type="text" value="" autocomplete="off" autofocus placeholder="My Email" name="email" id="email">
+                </div>
+              </div>
+              <div class="srch-tab-right"> 
+                
+                <!--<label>Phone Number</label>-->
+                
+                <div class="input-a">
+                  <input type="number" value="" autocomplete="off" placeholder="Phone Number" name="mobile" id="mobile" style="width:140px;
+
+
+                 font-size:11px; font-family: Raleway; border:none;">
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="srch-tab-line">
+              <div class="srch-tab-right" style="width:100%">
+                <div class="loader" style="display:none;" id="lodder"></div>
+                <input type="hidden" name="inserted_id" id="inserted_id" value=""/>
+                <button class="srch-btn" type="button" id="submit_frm1" style="margin-top:0px; margin-bottom:5px; float:right;">Check Price</button>
+              </div>
+            </div>
+            <div class="srch-tab-line">
+              <div class="srch-tab-left" style="width:40%">
+                <label><span class="ui-icon ui-icon-check" style="float:left; margin-right:5px"></span>Hotels @ 50% Off</label>
+                <label><span class="ui-icon ui-icon-check" style="float:left; margin-right:5px"></span>Private AC Car </label>
+              </div>
+              <div class="srch-tab-right" style="width:60%">
+                <label><span class="ui-icon ui-icon-check" style="float:left; margin-right:5px"></span>Major Sightseeing & Activity</label>
+                <label><span class="ui-icon ui-icon-check" style="float:left; margin-right:5px"></span>Customized Tour Package</label>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </form>
+    </div>
+    <div class="side-block fly-in" style="display:none;" id="formright_3">
+      <div class="side-block-search">
+        <div class="page-search-p">
+          <h4>Dear Guest, Thanks you for your interest !</h4>
+          <p>We will send you a Tailor Made program on your email for your Holidays in Bangkok. Don't Forget to check your inbox in next 24 Hrs , We are committed to reply your request within that time. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<header id="top">
+  <div class="header-b"> 
+    
+    <!-- // mobile menu // -->
+    
+    <div class="mobile-menu">
+      <nav>
+        <ul>
+          <li><a class="has-child" href="#">HOME</a></li>
+          <li><a href="#">TOUR PACKAGES</a></li>
+          <li><a href="#">HOLIDAYS PACKAGES</a></li>
+          <li><a href="#">CONTACS</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!-- \\ mobile menu \\ -->
+    
+    <div class="wrapper-padding">
+      <div class="header-logo"><a href="index.html"><img alt="" src="images/logo.png" /></a></div>
+      <div class="header-right"> <a href="#" class="menu-btn"></a>
+        <nav class="header-nav">
+          <ul>
+            <li><a class="has-child" href="#">HOME</a></li>
+            <li><a href="#">TOUR PACKAGES</a></li>
+            <li><a href="#">HOLIDAYS PACKAGES</a></li>
+            <li><a href="#">CONTACS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+<!-- main-cont -->
+
+<div class="main-cont">
+  <div class="body-wrapper">
+    <div class="wrapper-padding">
+      <div class="page-head">
+        <div class="page-title">Tours - <span>Holiday Packages </span></div>
+        <div class="breadcrumbs"> <a href="#">Home</a> / <a href="#">Tours Packages</a> / <span>Holiday Packages </span> </div>
+        <div class="clear"></div>
+      </div>
+      <div class="two-colls">
+        <div class="catalog-head fly-in">
+          <label>Showing 10 of 55 - Bangkok Tour Package</label>
+          <div class="clear"></div>
+        </div>
+        <div class="catalog-row"> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-01.jpg"></a></div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">An Awesome Pattaya Tour Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Pattaya(4D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"></div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 4 Days & 3 Nights</div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-a.png" /></a></li>
+                          </ul>
+                          <div class="clear"></div>
+                        </nav>
+                        <div class="cat-list-review">170 reviews</div>
+                        <div class="offer-slider-r"> <b>$154 / Rs. 9990</b> <span>(starting price per adult)</span></div>
+                        <a class="cat-list-btn" href="#">View detail</a></div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <br class="clear">
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- \\ --> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-02.jpg"></a> </div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">Romantic Bangkok And Phuket Honeymoon Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Phuket(3D) - Bangkok(3D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"> </div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 6 Days & 5 Nights</div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-a.png" /></a></li>
+                          </ul>
+                          <div class="clear"></div>
+                        </nav>
+                        <div class="cat-list-review">240 reviews</div>
+                        <div class="offer-slider-r"> <b>$ 198 / Rs. 12850</b> <span>(starting price per adult)</span> </div>
+                        <a class="cat-list-btn" href="#">View detail</a> </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <br class="clear">
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- \\ --> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-03.jpg"></a> </div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">Best Of Thailand Holiday Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Phuket(3D) - Pattaya(2D) - Bangkok(3D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"> </div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 6 Days/5 Nights</div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-a.png" /></a></li>
+                          </ul>
+                          <div class="clear"></div>
+                        </nav>
+                        <div class="cat-list-review">170 reviews</div>
+                        <div class="offer-slider-r"> <b>$ 229 / Rs. 14850</b> <span>(starting price per adult)</span> </div>
+                        <a class="cat-list-btn" href="#">View detail</a> </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <br class="clear">
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- \\ --> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-04.jpg"></a> </div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">Adventurous Phuket Family Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Phuket(4D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"> </div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 4 Days & 3 Nights</div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-a.png" /></a></li>
+                          </ul>
+                          <div class="clear"></div>
+                        </nav>
+                        <div class="cat-list-review">70 reviews</div>
+                        <div class="offer-slider-r"> <b>$ 202 / Rs.13150</b> <span>(starting price per adult)</span> </div>
+                        <a class="cat-list-btn" href="#">View detail</a> </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <br class="clear">
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- \\ --> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-05.jpg"></a> </div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">Magnificent Thailand Family Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Phuket(2D) - Krabi(3D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"> </div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 5 Days & 4 Nights </div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-a.png" /></a></li>
+                          </ul>
+                          <div class="clear"></div>
+                        </nav>
+                        <div class="cat-list-review">50 reviews</div>
+                        <div class="offer-slider-r"> <b>$ 233 / Rs. 15150</b> <span>(starting price per adult)</span> </div>
+                        <a class="cat-list-btn" href="#">View detail</a> </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                </div>
+              </div>
+              <br class="clear">
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+          <!-- \\ --> 
+          
+          <!-- // -->
+          
+          <div class="cat-list-item tour-item fly-in">
+            <div class="cat-list-item-l"> <a href="#"><img alt="" src="images/tour-06.jpg"></a> </div>
+            <div class="cat-list-item-r">
+              <div class="cat-list-item-rb">
+                <div class="cat-list-item-p">
+                  <div class="cat-list-content">
+                    <div class="cat-list-content-a">
+                      <div class="cat-list-content-l">
+                        <div class="cat-list-content-lb">
+                          <div class="cat-list-content-lpadding">
+                            <div class="tour-item-a">
+                              <div class="tour-item-lbl"><a href="#">Rejuvenating Thailand Tour Package</a></div>
+                            </div>
+                            <div class="tour-item-devider"></div>
+                            <div class="tour-item-b">
+                              <p>Phuket(2D) - Krabi(2D) - Bangkok(3D)</p>
+                              <div class="tour-item-footer">
+                                <div class="tour-i-holder">
+                                  <div class="tour-item-icons"> <img alt="" src="images/tour-icon-01.png"> <span class="tour-item-plus"><img alt="" src="images/tour-icon.png"></span> <img alt="" src="images/tour-icon-02.png"> </div>
+                                  <div class="tour-icon-txt">Meals + Sightseeing</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="tour-duration">Duration : 7 Days & 6 Nights</div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br class="clear">
+                      </div>
+                    </div>
+                    <div class="cat-list-content-r">
+                      <div class="cat-list-content-p">
+                        <nav class="stars">
+                          <ul>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+                            <li><a href="#"><img alt="" src="images/star-b.png" /></a></li>
+              

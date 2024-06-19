@@ -1,0 +1,8 @@
+[14-Mar-2018 12:24:57 Etc/GMT] PHP Notice:  Undefined index: currentPageUrl in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 7
+[14-Mar-2018 12:24:57 Etc/GMT] PHP Notice:  Undefined index: email in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 38
+[14-Mar-2018 12:24:57 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 43
+[14-Mar-2018 12:24:57 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 98
+[14-Mar-2018 12:41:50 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 43
+[14-Mar-2018 12:41:50 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 98
+[14-Mar-2018 12:41:53 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 43
+[14-Mar-2018 12:41:53 Etc/GMT] PHP Notice:  Undefined index: action in /home/goinmywayco/public_html/balitourpackage/bangkok/ajax_datasubmit.php on line 98

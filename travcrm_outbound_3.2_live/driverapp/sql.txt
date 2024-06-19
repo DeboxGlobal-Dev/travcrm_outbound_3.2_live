@@ -1,0 +1,4 @@
+10-May-2021(Aamir Ahmed)
+ALTER TABLE `driverMaster` ADD `onlineStatus` INT NOT NULL DEFAULT '0' AFTER `badgeNo`;
+ALTER TABLE `tbl_guidemaster` ADD `onlineStatus` INT NOT NULL DEFAULT '0' AFTER `addressParent`;
+ALTER TABLE `driverMaster` ADD `driverImage` VARCHAR(255) NOT NULL AFTER `onlineStatus`;
