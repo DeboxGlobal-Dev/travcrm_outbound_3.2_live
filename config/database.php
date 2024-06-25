@@ -5,9 +5,9 @@ function db() {
 	static $conn;
 		if ($conn===NULL){ 
 			$servername = "localhost";
-			$username = "travcrm_demo";
-			$password = "DeBoxD@1010!";
-			$dbname = "travcrm_Outbound_3.2_live"; 
+			$username = "root";
+			$password = "";
+			$dbname = "travcrm_outbound_3.2_live"; 
 			$conn = mysqli_connect ($servername, $username, $password, $dbname);
 	}
 	return $conn;

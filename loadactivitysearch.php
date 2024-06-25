@@ -124,7 +124,7 @@ $whereSuppQuery = " and supplierId in ( select id from suppliersMaster where 1 a
 						$gstValue=getGstValueById($dmcRateD['gstTax']); 
 						$activityCostPP = strip($dmcRateD['perPaxCost']);
 						$activityCostPP= round(($activityCostPP*$gstValue/100)+$activityCostPP); 
-
+						$noOfVehicles = ($dmcRateD['noOfVehicles']>0)?$dmcRateD['noOfVehicles']:1;
 						$serviceId = $activityData['id'];
 						$currencyId = $dmcRateD['currencyId'];
 						// $currencyValue = ($dmcRateD['currencyValue']>0)?$dmcRateD['currencyValue']:0;
@@ -170,7 +170,7 @@ $whereSuppQuery = " and supplierId in ( select id from suppliersMaster where 1 a
 					<?php if($transferType==2){ ?>
 						<td><?php echo $vehicleType['name'].$capacity; ?></td>
 						<td><?php echo $vehicleCost; ?></td>
-						<td align="center"><input type="number" name="noOfVehicles<?php echo $dmcId; ?>" id="noOfVehicles<?php echo $dmcId; ?>" value="1" style="width:50px"></td>
+						<td align="center"><input type="number" name="noOfVehicles<?php echo $dmcId; ?>" id="noOfVehicles<?php echo $dmcId; ?>" value="<?php echo $noOfVehicles; ?>" style="width:50px"></td>
 					<?php } ?>
 					<td align="center">
 
@@ -207,7 +207,7 @@ $whereSuppQuery = " and supplierId in ( select id from suppliersMaster where 1 a
 
 								$tableN = 2;
 								$dmcId = $actQoutRateD['id'];
-								
+								$noOfVehicles = ($actQoutRateD['noOfVehicles']>0)?$actQoutRateD['noOfVehicles']:1;
 								$activityCostPP = 0;
 								$gstValue=getGstValueById($actQoutRateD['gstTax']); 
 								if($actQoutRateD['transferType']!=2 && $actQoutRateD['transferType']!=3){
@@ -253,7 +253,7 @@ $whereSuppQuery = " and supplierId in ( select id from suppliersMaster where 1 a
 						<?php if($transferType==2){ ?>
 						<td><?php echo $vehicleType['name'].$capacity; ?></td>
 						<td><?php echo $vehicleCost; ?></td>
-						<td align="center"><input type="number" name="noOfVehicles<?php echo $dmcId; ?>" id="noOfVehicles<?php echo $dmcId; ?>" value="1" style="width:50px"></td>
+						<td align="center"><input type="number" name="noOfVehicles<?php echo $dmcId; ?>" id="noOfVehicles<?php echo $dmcId; ?>" value="<?php echo $noOfVehicles; ?>" style="width:50px"></td>
 						<?php } ?>		
 						<td align="center">
 

@@ -341,10 +341,22 @@ $reslogo = mysqli_fetch_assoc($logores);
                 </h6>
                 </div>
 
-                <div class="col-3 signature001" style="text-align: right;margin-top: 40px;">
-                    <h3 style="font-size: 15px;font-weight: bold;" class="authsig">For <?php echo $reslogo['companyName']; ?></h3>
-                    <h4 style="font-size: 16px;" class="authsig">Authorise Signature</h4>
-                </div>
+                <?php 
+                        $select1='*';   
+                        $where1='id=1'; 
+                        $rs1=GetPageRecord($select1,_INVOICE_SETTING_MASTER_,$where1); 
+                        $editresult=mysqli_fetch_array($rs1);
+                        
+                        $editcompanyname=addslashes($editresult['companyname']); 
+                    ?>
+                    <div class="col-4 signature001" style="text-align: right;">
+                        <h3 style="font-size: 15px;font-weight: bold;" class="authsig">For 
+                            <?php echo $editcompanyname; ?>
+                        </h3>
+                        <h4 style="font-size: 16px;" class="authsig">Authorise Signature</h4>
+                    </div>
+
+                
 
             </div>
         </div>

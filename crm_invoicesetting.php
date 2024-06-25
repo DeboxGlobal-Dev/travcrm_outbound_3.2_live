@@ -42,37 +42,37 @@ if(trim($_POST['editedityes'])=='1' && trim($_POST['companyname'])!='' && trim($
 }
 
 
-$select1='*';   
-$where1='id=1'; 
-$rs1=GetPageRecord($select1,_INVOICE_SETTING_MASTER_,$where1); 
-$editresult=mysqli_fetch_array($rs1);
+    $select1='*';   
+    $where1='id=1'; 
+    $rs1=GetPageRecord($select1,_INVOICE_SETTING_MASTER_,$where1); 
+    $editresult=mysqli_fetch_array($rs1);
 
-$repolicies=addslashes($editresult['repolicies']); 
-$readdress=addslashes($editresult['readdress']); 
-$recompanyname=addslashes($editresult['recompanyname']); 
-$editcompanyname=addslashes($editresult['companyname']); 
-$editphone=stripslashes($editresult['phone']); 
-$editemail=stripslashes($editresult['email']);  
-$editwebsite=stripslashes($editresult['website']); 
-$editpolicies=stripslashes($editresult['termscondition']);   
-$logo=stripslashes($editresult['logo']);  
+    $repolicies=addslashes($editresult['repolicies']); 
+    $readdress=addslashes($editresult['readdress']); 
+    $recompanyname=addslashes($editresult['recompanyname']); 
+    $editcompanyname=addslashes($editresult['companyname']); 
+    $editphone=stripslashes($editresult['phone']); 
+    $editemail=stripslashes($editresult['email']);  
+    $editwebsite=stripslashes($editresult['website']); 
+    $editpolicies=stripslashes($editresult['termscondition']);   
+    $logo=stripslashes($editresult['logo']);  
 
 
-// from inc.php $editresultcsm['id']
-$select2='*';   
-$where2='companySettingId="'.$editresultcsm['id'].'"'; 
-$rs1=GetPageRecord($select2,'componyFinanceSetting',$where2); 
-$editresultfs=mysqli_fetch_array($rs1);
+    // from inc.php $editresultcsm['id']
+    $select2='*';   
+    $where2='companySettingId="'.$editresultcsm['id'].'"'; 
+    $rs1=GetPageRecord($select2,'componyFinanceSetting',$where2); 
+    $editresultfs=mysqli_fetch_array($rs1);
 
-$repolicies=addslashes($editresult['repolicies']); 
-$readdress=addslashes($editresult['readdress']); 
-$recompanyname=addslashes($editresult['recompanyname']); 
-$editcompanyname=addslashes($editresult['companyname']); 
-$editphone=stripslashes($editresult['phone']); 
-$editemail=stripslashes($editresult['email']);  
-$editwebsite=stripslashes($editresult['website']); 
-// $editpolicies=stripslashes($editresult['termscondition']);   
-$logo=stripslashes($editresult['logo']);  
+    $repolicies=addslashes($editresult['repolicies']); 
+    $readdress=addslashes($editresult['readdress']); 
+    $recompanyname=addslashes($editresult['recompanyname']); 
+    $editcompanyname=addslashes($editresult['companyname']); 
+    $editphone=stripslashes($editresult['phone']); 
+    $editemail=stripslashes($editresult['email']);  
+    $editwebsite=stripslashes($editresult['website']); 
+    // $editpolicies=stripslashes($editresult['termscondition']);   
+    $logo=stripslashes($editresult['logo']);  
 
 
 

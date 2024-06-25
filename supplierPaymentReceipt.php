@@ -1,10 +1,10 @@
 <?php 
 include "inc.php";
 
-$quotationId = $_REQUEST['quotationId'];
-$scheduleId = $_REQUEST['scheduleId'];
+    $quotationId = $_REQUEST['quotationId'];
+    $scheduleId = $_REQUEST['scheduleId'];
 
-$scheduleSuppId = $_REQUEST['scheduleSuppId'];
+    $scheduleSuppId = $_REQUEST['scheduleSuppId'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,120 +21,120 @@ $scheduleSuppId = $_REQUEST['scheduleSuppId'];
     <title>payment</title>
     <style>
           body{
-        margin: 0px;
-        padding:0px;
-    }
-        
-    .agent-id{
-        text-align: right;
-    }
-    .table-sec-area{
-        margin-top: 40px;
-    }
-    .p-tbl{
-        padding-right: 300px!important;
-    }
-    .term-cond h5{
-        font-size: 12px;
-        color: #5e5656;
-        font-weight: bold;
-        font-family: sans-serif;
-    }
-    .w-amo{
-        font-size: 10px;
-        font-weight: bold;
-    }
-    .table-sec-area{
-        font-family: sans-serif;
-    }
-    .payment-text{
-        font-size: 22px;
-        font-family: sans-serif;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-    .top-hader{
-        width: 790px;
-        display: block;
-        background: center;
-        background-size: cover;
-        height: 100px;
-    }
-    h5{
-        font-size: 1rem !important;
-    }
-    .sentreceipt{
-        cursor: pointer;
-        margin-right: 15px;
-        padding: 1px 14px;
-        font-size: 19px;
-        border-radius: 3px;
-    }
-    .printreceipt{
-        cursor: pointer;
-        border:1px solid #ccc;
-        padding: 3px 20px;
-        font-size:12px;
-        background-color:#000;
-        color:#FFFFFF!important;
-        border-radius: 2px;
-        margin-right: 20px;
-    }
+            margin: 0px;
+            padding:0px;
+        }
+            
+        .agent-id{
+            text-align: right;
+        }
+        .table-sec-area{
+            margin-top: 40px;
+        }
+        .p-tbl{
+            padding-right: 300px!important;
+        }
+        .term-cond h5{
+            font-size: 12px;
+            color: #5e5656;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .w-amo{
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .table-sec-area{
+            font-family: sans-serif;
+        }
+        .payment-text{
+            font-size: 22px;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .top-hader{
+            width: 790px;
+            display: block;
+            background: center;
+            background-size: cover;
+            height: 100px;
+        }
+        h5{
+            font-size: 1rem !important;
+        }
+        .sentreceipt{
+            cursor: pointer;
+            margin-right: 15px;
+            padding: 1px 14px;
+            font-size: 19px;
+            border-radius: 3px;
+        }
+        .printreceipt{
+            cursor: pointer;
+            border:1px solid #ccc;
+            padding: 3px 20px;
+            font-size:12px;
+            background-color:#000;
+            color:#FFFFFF!important;
+            border-radius: 2px;
+            margin-right: 20px;
+        }
 
-    .otherdetail th{
-        background-color: #f1f1f1;
-        font-size: 12px;
-        vertical-align: top;
-    }
-    .main-nav{
-        margin: 10px;
-    }
-    .main-sec{
-        margin:10px 20px;
-    }
+        .otherdetail th{
+            background-color: #f1f1f1;
+            font-size: 12px;
+            vertical-align: top;
+        }
+        .main-nav{
+            margin: 10px;
+        }
+        .main-sec{
+            margin:10px 20px;
+        }
     
     </style>
 </head>
 <?php 
 
-$fianlSuppQuery=GetPageRecord('*','finalQuotSupplierStatus',' quotationId="'.$_REQUEST['quotationId'].'" and id="'.$_REQUEST['scheduleSuppId'].'" ');
-$supplierStatusData=mysqli_fetch_array($fianlSuppQuery);
+    $fianlSuppQuery=GetPageRecord('*','finalQuotSupplierStatus',' quotationId="'.$_REQUEST['quotationId'].'" and id="'.$_REQUEST['scheduleSuppId'].'" ');
+    $supplierStatusData=mysqli_fetch_array($fianlSuppQuery);
 
-// scheduletalbe
-$totalCost = $supplierStatusData['totalSupplierCost'];
-$quotationId = $supplierStatusData['quotationId'];
+    // scheduletalbe
+    $totalCost = $supplierStatusData['totalSupplierCost'];
+    $quotationId = $supplierStatusData['quotationId'];
 
-$r2='';
-$r2=GetPageRecord('sum(amount) as totalAmount','supplierSchedulePaymentMaster','supplierStatusId="'.$supplierStatusData['id'].'" and amount!="" and value!="" and paymentStatus=1'); 
-$schedulePaymentData = mysqli_fetch_array($r2);
-$paidAMT = $schedulePaymentData['totalAmount'];
-$remainAmount = $totalCost-$paidAMT;	
-
-
-$ressSu = GetPageRecord('*',_SUPPLIERS_MASTER_,'id="'.$supplierStatusData['supplierId'].'"');
-$suppDataSuplier = mysqli_fetch_assoc($ressSu);
-$SupplerName = $suppDataSuplier['name'];
-$destinationId = $suppDataSuplier['destinationId'];
+    $r2='';
+    $r2=GetPageRecord('sum(amount) as totalAmount','supplierSchedulePaymentMaster','supplierStatusId="'.$supplierStatusData['id'].'" and amount!="" and value!="" and paymentStatus=1'); 
+    $schedulePaymentData = mysqli_fetch_array($r2);
+    $paidAMT = $schedulePaymentData['totalAmount'];
+    $remainAmount = $totalCost-$paidAMT;	
 
 
-$ressA = GetPageRecord('*','supplierPaymentMaster','id="'.$_REQUEST['scheduleId'].'"');
-$suppDataAmuD = mysqli_fetch_assoc($ressA);
-$paymentBy = $suppDataAmuD['paymentBy'];
-$remark= $suppDataAmuD['remark'];
-$paymentDate= $suppDataAmuD['paymentDate'];
-$paidBy= $suppDataAmuD['paidBy'];
-$Reciamount= $suppDataAmuD['amount'];
-$bankId= $suppDataAmuD['bankId'];
+    $ressSu = GetPageRecord('*',_SUPPLIERS_MASTER_,'id="'.$supplierStatusData['supplierId'].'"');
+    $suppDataSuplier = mysqli_fetch_assoc($ressSu);
+    $SupplerName = $suppDataSuplier['name'];
+    $destinationId = $suppDataSuplier['destinationId'];
 
 
-$ressBankR = GetPageRecord('*','bankMaster','id="'.$bankId.'"');
-$suppBankD = mysqli_fetch_assoc($ressBankR);
-$bankName = $suppBankD['bankName'];
+    $ressA = GetPageRecord('*','supplierPaymentMaster','id="'.$_REQUEST['scheduleId'].'"');
+    $suppDataAmuD = mysqli_fetch_assoc($ressA);
+    $paymentBy = $suppDataAmuD['paymentBy'];
+    $remark= $suppDataAmuD['remark'];
+    $paymentDate= $suppDataAmuD['paymentDate'];
+    $paidBy= $suppDataAmuD['paidBy'];
+    $Reciamount= $suppDataAmuD['amount'];
+    $bankId= $suppDataAmuD['bankId'];
 
-$pendingAmount = $totalSupplierQuotCost- $Reciamount;
-$res = GetPageRecord('*',_QUERY_MASTER_,'id="'.$_REQUEST['queryId'].'"');
-$queryData = mysqli_fetch_assoc($res);
-$queryId = $queryData['id'];
+
+    $ressBankR = GetPageRecord('*','bankMaster','id="'.$bankId.'"');
+    $suppBankD = mysqli_fetch_assoc($ressBankR);
+    $bankName = $suppBankD['bankName'];
+
+    $pendingAmount = $totalSupplierQuotCost- $Reciamount;
+    $res = GetPageRecord('*',_QUERY_MASTER_,'id="'.$_REQUEST['queryId'].'"');
+    $queryData = mysqli_fetch_assoc($res);
+    $queryId = $queryData['id'];
 // die("nb");
 
 if($queryData['clientType']!='2'){

@@ -102,61 +102,61 @@ $scheduleId = $_REQUEST['scheduleId'];
 </head>
 <?php 
 
-$res = GetPageRecord('*',_QUERY_MASTER_,'id="'.$_REQUEST['queryId'].'"');
-$queryData = mysqli_fetch_assoc($res);
-$queryId = $queryData['id'];
+    $res = GetPageRecord('*',_QUERY_MASTER_,'id="'.$_REQUEST['queryId'].'"');
+    $queryData = mysqli_fetch_assoc($res);
+    $queryId = $queryData['id'];
 
 
-if($queryData['clientType']!='2'){
-$select4='*';
-$where4='id='.$queryData['companyId'].'';
-$rs4=GetPageRecord($select4,_CORPORATE_MASTER_,$where4);
-$resultCompany=mysqli_fetch_array($rs4);
-$mobilemailtype='corporate';
-}
-if($queryData['clientType']=='2'){
-$select4='*';
-$where4='id='.$queryData['companyId'].'';
-$rs4=GetPageRecord($select4,_CONTACT_MASTER_,$where4);
-$resultCompany=mysqli_fetch_array($rs4);
-$mobilemailtype='contacts';
-}
+    if($queryData['clientType']!='2'){
+    $select4='*';
+    $where4='id='.$queryData['companyId'].'';
+    $rs4=GetPageRecord($select4,_CORPORATE_MASTER_,$where4);
+    $resultCompany=mysqli_fetch_array($rs4);
+    $mobilemailtype='corporate';
+    }
+    if($queryData['clientType']=='2'){
+    $select4='*';
+    $where4='id='.$queryData['companyId'].'';
+    $rs4=GetPageRecord($select4,_CONTACT_MASTER_,$where4);
+    $resultCompany=mysqli_fetch_array($rs4);
+    $mobilemailtype='contacts';
+    }
 
-$wherest = 'id="'.$resultCompany['stateId'].'"';
-$getstate = GetPageRecord('*','stateMaster',$wherest);
-$stresult = mysqli_fetch_assoc($getstate);
+    $wherest = 'id="'.$resultCompany['stateId'].'"';
+    $getstate = GetPageRecord('*','stateMaster',$wherest);
+    $stresult = mysqli_fetch_assoc($getstate);
 
-$wherecot = 'id="'.$resultCompany['countryId'].'"';
-$getcountry = GetPageRecord('*','countryMaster',$wherecot);
-$ctresult = mysqli_fetch_assoc($getcountry);
+    $wherecot = 'id="'.$resultCompany['countryId'].'"';
+    $getcountry = GetPageRecord('*','countryMaster',$wherecot);
+    $ctresult = mysqli_fetch_assoc($getcountry);
 
-$select4='*';  
-    $where4='addressType="'.$mobilemailtype.'" and addressParent="'.$editresult['companyId'].'"'; 
-    $rs4=GetPageRecord($select4,_ADDRESS_MASTER_,$where4); 
-    $address=mysqli_fetch_array($rs4); 
+    $select4='*';  
+        $where4='addressType="'.$mobilemailtype.'" and addressParent="'.$editresult['companyId'].'"'; 
+        $rs4=GetPageRecord($select4,_ADDRESS_MASTER_,$where4); 
+        $address=mysqli_fetch_array($rs4); 
 
 
-$result = GetPageRecord('*','agentPaymentMaster','quotationId="'.$quotationId.'" and scheduleId="'.$scheduleId.'" ');
-$scheduledData = mysqli_fetch_assoc($result);
-$schduleId = $scheduledData['scheduleId'];
-$scheduledData['quotationId'];
+    $result = GetPageRecord('*','agentPaymentMaster','quotationId="'.$quotationId.'" and scheduleId="'.$scheduleId.'" ');
+    $scheduledData = mysqli_fetch_assoc($result);
+    $schduleId = $scheduledData['scheduleId'];
+    $scheduledData['quotationId'];
 
-$ptype = GetPageRecord('*','paymentTypeMaster','id="'.$scheduledData['paymentBy'].'" and status=1');
-$paymenttype = mysqli_fetch_assoc($ptype);
+    $ptype = GetPageRecord('*','paymentTypeMaster','id="'.$scheduledData['paymentBy'].'" and status=1');
+    $paymenttype = mysqli_fetch_assoc($ptype);
 
-$respay = GetPageRecord('*','quotationMaster','id="'.$scheduledData['quotationId'].'" and status=1');
-$agentPayment = mysqli_fetch_assoc($respay);
-$finalCost = round($agentPayment['totalQuotCost']);
-$currencyId = $agentPayment['currencyId'];
+    $respay = GetPageRecord('*','quotationMaster','id="'.$scheduledData['quotationId'].'" and status=1');
+    $agentPayment = mysqli_fetch_assoc($respay);
+    $finalCost = round($agentPayment['totalQuotCost']);
+    $currencyId = $agentPayment['currencyId'];
 
-$result = GetPageRecord('SUM(amount) as paidAmount','agentPaymentMaster','quotationId="'.$scheduledData['quotationId'].'"');
-$paidPayment = mysqli_fetch_assoc($result);
-$receivedAmount = $paidPayment['paidAmount'];
+    $result = GetPageRecord('SUM(amount) as paidAmount','agentPaymentMaster','quotationId="'.$scheduledData['quotationId'].'"');
+    $paidPayment = mysqli_fetch_assoc($result);
+    $receivedAmount = $paidPayment['paidAmount'];
 
-$pendingCost = $finalCost-$paidPayment['paidAmount'];
+    $pendingCost = $finalCost-$paidPayment['paidAmount'];
 
-$logores = GetPageRecord('*','companySettingsMaster','proposalLogo!=""');
-$reslogo = mysqli_fetch_assoc($logores);
+    $logores = GetPageRecord('*','companySettingsMaster','proposalLogo!=""');
+    $reslogo = mysqli_fetch_assoc($logores);
 
 ?>
 <body>
@@ -351,22 +351,33 @@ $reslogo = mysqli_fetch_assoc($logores);
                 </tbody>
             </table>
 
-            <div class="row" style="margin-top: 80px;" >
-                <div class="col-8 term-cond01">
-                        <h5 style="" class="terc ">Terms & Conditions:</h5><br>
-                        <h6 style="font-size: 13px;" class="termtext">1. &nbsp;&nbsp;&nbsp; All terms & conditions of proposal/Purchase Order are applicable.</h6>
-                        <h6 style="font-size: 13px;" class="termtext">2. &nbsp;&nbsp;&nbsp; Payment by cheque will be valid subject to realisation of the cheque.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is system generated document and does not need any signature or stamp.   
-                </h6>
-                </div>
+                <div class="row" style="margin-top: 80px;" >
+                    <div class="col-8 term-cond01">
+                            <h5 style="" class="terc ">Terms & Conditions:</h5><br>
+                            <h6 style="font-size: 13px;" class="termtext">1. &nbsp;&nbsp;&nbsp; All terms & conditions of proposal/Purchase Order are applicable.</h6>
+                            <h6 style="font-size: 13px;" class="termtext">2. &nbsp;&nbsp;&nbsp; Payment by cheque will be valid subject to realisation of the cheque.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is system generated document and does not need any signature or stamp.   
+                    </h6>
+                    </div>
 
-                <div class="col-4 signature001" style="text-align: right;">
-                    <h3 style="font-size: 15px;font-weight: bold;" class="authsig">For <?php echo $reslogo['companyName']; ?></h3>
-                    <h4 style="font-size: 16px;" class="authsig">Authorise Signature</h4>
-                </div>
 
+                    <?php 
+                        $select1='*';   
+                        $where1='id=1'; 
+                        $rs1=GetPageRecord($select1,_INVOICE_SETTING_MASTER_,$where1); 
+                        $editresult=mysqli_fetch_array($rs1);
+                        
+                        $editcompanyname=addslashes($editresult['companyname']); 
+                    ?>
+                    <div class="col-4 signature001" style="text-align: right;">
+                        <h3 style="font-size: 15px;font-weight: bold;" class="authsig">For 
+                            <?php echo $editcompanyname; ?>
+                        </h3>
+                        <h4 style="font-size: 16px;" class="authsig">Authorise Signature</h4>
+                    </div>
+
+                </div>
             </div>
-        </div>
         <style>
       @media print{
 

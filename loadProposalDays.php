@@ -1726,6 +1726,7 @@ while($sorting=mysqli_fetch_array($b)){
 					<th align="left" bgcolor="#ddd">vehicle&nbsp;Type</th>
 					<th align="left" bgcolor="#ddd">Vehicle&nbsp;Cost</th>
 					<th align="left" bgcolor="#ddd">No.&nbsp;Of&nbsp;Vehicle</th>
+					<th align="left" bgcolor="#ddd">total&nbsp;Cost</th>
 					<?php } if($transferType!=4){ ?>
 					<th align="left" bgcolor="#ddd">Rep.&nbsp;Cost</th>
 					<?php } ?>
@@ -1764,6 +1765,8 @@ while($sorting=mysqli_fetch_array($b)){
 					</td>
 					<td align="left"><?php echo $cur.' '.getCostWithGSTID_Markup($quotationActivityData['vehicleCost'],$quotationActivityData['gstTax'],$quotationActivityData['markupCost'],$quotationActivityData['markupType']); ?></td>
 					<td><?php echo $noOfVehicles; ?></td>
+					<td align="left"><?php echo $cur.' '.(getCostWithGSTID_Markup($quotationActivityData['vehicleCost'],$quotationActivityData['gstTax'],$quotationActivityData['markupCost'],$quotationActivityData['markupType'])*$noOfVehicles); ?></td>
+
 					<?php } if($transferType!=4){?>
 					<td align="left"><?php echo $cur.' '.getCostWithGSTID_Markup($quotationActivityData['repCost'],$quotationActivityData['gstTax'],$quotationActivityData['markupCost'],$quotationActivityData['markupType']); ?></td>
 					<?php } } ?>

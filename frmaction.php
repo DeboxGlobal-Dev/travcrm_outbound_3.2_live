@@ -10796,7 +10796,7 @@ if(trim($_POST['action'])=='addQuotationGuidePrice' && trim($_POST['guideSupplie
 }
 
 if(trim($_REQUEST['action'])=='addQuotationActivityPrice' && trim($_REQUEST['act_supplierId'])!='' && trim($_REQUEST['act_serviceId'])!='' && trim($_REQUEST['act_currencyId'])!='' && trim($_REQUEST['act_currencyValue'])!=''){
-
+	
 	$supplierId = clean($_REQUEST['act_supplierId']);
 	$tarifType = clean($_REQUEST['act_tarifType']);
 	$transferType = clean($_REQUEST['act_transferType']);

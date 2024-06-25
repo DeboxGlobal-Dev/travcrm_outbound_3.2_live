@@ -39,7 +39,8 @@ if(!empty($editresultcsm)){
 
 // $fullurl='http://localhost/GitHub/outbound3_2/TravCRMExtension/travcrm-dev/';
 
-$fullurl='https://travcrm.in/travcrm_outbound_3.2_live/';
+$fullurl='http://localhost/travcrm_outbound_3.2_live/';
+// $fullurl='https://travcrm.in/travcrm_outbound_3.2_dev/';
 // $fullurl='http://localhost/GitHub/outbound3.2/TravCRMExtension/travcrm-dev/';
 
 $systemname=$masterCompanyName;
